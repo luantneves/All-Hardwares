@@ -1,0 +1,260 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.container{
+    display: flex;
+    box-sizing: border-box;
+    
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    grid-gap: 10px;
+    
+    
+}
+
+
+header{
+    background: rgb(0, 0, 0);
+    width: 80%;
+    color:  rgb(173, 173, 173);;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    border-radius: 15px;
+    border-left: 2px solid rgb(235, 121, 0);
+    border-right: 2px solid rgb(235, 121, 0);
+}
+
+
+nav ul{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header a img{
+    height: 150px;
+    padding-left: 50px;
+}
+
+header nav ul{
+    display: flex;
+
+}
+header nav ul li{
+    margin: 40px;
+    
+}
+header nav ul li a:hover{
+    background-color: rgb(235, 121, 0);
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 0.9;
+    transition: 300ms linear;
+    
+    
+
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    background: rgb(173, 173, 173);
+    width: 80%;
+    min-height: 500px;
+    border-radius: 15px;
+    border-top: 2px solid rgb(235, 121, 0);
+    border-bottom: 2px solid rgb(235, 121, 0);
+    
+    
+    
+}
+
+.index section {
+    
+    margin-left: 70px;
+    padding:20px;    
+}
+
+main .img{
+    display: flex;
+    align-items: center;
+}
+
+
+main img {
+   
+    max-height: 400px;
+}
+
+main p{
+    position: relative;
+   align-items: center;
+   font-size: 28px;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+} 
+
+main h1{
+    font-size: 35px;
+    color: rgb(62, 62, 62);
+    
+    
+    
+}
+
+
+main section button{
+    
+    
+    padding: 20px;
+    bottom: 20px;
+    border-radius: 5px;
+    border: solid 1px rgb(108, 108, 108);
+    font-size: 20px;
+    font-style: strong;
+    background-color: rgba(235, 121, 0, 0.8) ;
+    width: 200px;
+}
+
+main .preparo{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .preparo h1{
+    max-width: 100%;
+}
+
+main .video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .fotos{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    gap: 20px;
+}
+
+main .fotos img{
+    max-width: 400px;
+    max-height: 300px;
+    
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    
+    background: rgb(0, 0, 0);
+    width: 80%;
+    min-height: 150px;
+    border-radius: 15px;
+    border-bottom: 2px solid rgb(235, 121, 0);
+    box-sizing: border-box;
+    transition: 300ms;
+}
+
+footer section{
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer section img{
+    
+    width: 65px;
+    border: solid 1px rgb(235, 121, 0);
+    border-radius: 5px;
+    
+}
+.fotos div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.fotos div h1{
+    font-size: 35px;
+}
+
+@media(max-width: 1150px){
+    header{
+        flex-direction: column;  
+          
+    }
+    header li:first-child{display: none;
+    align-items: center;}
+
+
+ 
+
+    header a img{
+        padding: 0;
+    }
+
+    header nav ul{
+        padding: 0;
+        
+        
+        
+    }
+    header nav ul li{
+        margin: 20px;
+       
+       
+        
+    }
+    main{
+        flex-wrap: wrap;
+    }
+    main section{
+        margin: 50px;
+      
+    }
+    main img {
+   
+        max-height: 300px;
+    }
+
+    iframe{
+        width: 300px;
+        height: 168px;
+    }
+
+    main .fotos img{
+        max-width: 300px;
+        max-height: 200px;
+        
+    }
+
+
+}
+
